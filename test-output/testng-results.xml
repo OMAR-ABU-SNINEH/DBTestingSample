@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-19T21:05:41 EET" name="Default suite" finished-at="2024-09-19T21:05:41 EET" duration-ms="606">
+    <groups>
+    </groups>
+    <test started-at="2024-09-19T21:05:41 EET" name="Default test" finished-at="2024-09-19T21:05:41 EET" duration-ms="606">
+      <class name="MyTestCases">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MyTestCases@7db12bb6]" started-at="2024-09-19T21:05:41 EET" name="setUp" description="my sample DB from this link &#039;https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysqlsampledatabase.zip&#039;" finished-at="2024-09-19T21:05:41 EET" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getData()[pri:0, instance:MyTestCases@7db12bb6]" started-at="2024-09-19T21:05:41 EET" name="getData" finished-at="2024-09-19T21:05:41 EET" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:MyTestCases@7db12bb6]" started-at="2024-09-19T21:05:41 EET" name="cleanUp" finished-at="2024-09-19T21:05:41 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- MyTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

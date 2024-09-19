@@ -17,14 +17,34 @@ public class MyTestCases {
 	Statement stmt;
 	ResultSet rs;
 
-	@BeforeTest
+	@BeforeTest(description = "my sample DB from this link 'https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysqlsampledatabase.zip'")
 	public void setUp() throws SQLException {
 		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels", "root", "123456");
 	}
 
 	@Test
-	public void getData() {
+	public void getData() throws SQLException {
 
+		stmt = con.createStatement();
+
+		rs = stmt.executeQuery("select * from customers where country = 'Australia'");
+
+		int row = 0;
+		while (rs.next()) {
+			
+			++row;
+
+			int customerNumber = rs.getInt("customerNumber");
+			String customerName = rs.getString("customerName");
+			String phone = rs.getString("phone");
+
+			System.out.println("***************************************** " + row);
+			System.out.println("the customer number is " + customerNumber);
+			System.out.println("the customer name is " + customerName);
+			System.out.println("the customer phone number is " + phone);
+
+		}
+		System.out.println("\nThe total number of rows equal "+row);
 	}
 
 	@AfterTest
